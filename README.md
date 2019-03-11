@@ -3,10 +3,6 @@
 
 ## Paterson Aaron, Design/Dev
 
-## Getting Started
-Have a series of meetings regards who's going to design and develop. 
-What need interactions would we like to see on the interface?
-
 ## Execution 
  At mobile size (remember mobile first)
 # - The columns should stack and be full width.
