@@ -1,0 +1,155 @@
+@charset "UTF-8"; /* CSS Document */
+
+.hidden
+{
+	display: none;
+}
+
+body
+{
+	font-family: 'Trebuchet', Arial, sans-serif;
+}
+/* Everything here starts in Mobile first */
+#siteContainer
+{
+	margin: 0 auto;
+	background-color: #f4f4f4;
+	flex-direction: row;
+	max-width: 1140px;
+
+}
+
+	/* Default width for the web */
+	img, embed, object, video
+	{
+	max-width: 100%;
+	}
+
+	.box
+	{
+		background-color: SlateBlue;
+		color: #fff;
+		padding: 20px;
+		text-align: center;
+		margin: 10px;
+	}
+
+	/* default for the logo */
+	.logo
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 100px;
+	}
+
+
+
+	.column1
+	{
+		background-color: pink;
+
+	}
+
+
+	.column2
+	{
+
+		background-color: red;
+
+	}
+
+
+	.column3
+	{
+		display: none
+	}
+
+
+	.column4
+	{
+		display: none
+	}
+
+/* At 641 pixels and above do this */
+@media screen and (min-width: 641px){
+	
+	/* Display content side by side */
+	#mainHeader
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	/* Display content side by side */
+	#products
+	{
+		display: flex;
+		flex-direction: row;
+	}
+	
+	/* space to the left and right of the logo */
+	.box
+	{
+		flex: 1 1 auto;
+	}
+
+	.logo
+	{
+		margin-left:  10px;
+		margin-right: 10px;
+		flex: 0 1 220px;
+		order: -1;
+	}
+
+	.nav
+	{
+		flex: 0 1 600px;
+		margin-left: auto;
+	}
+
+	.column1
+	{
+		background-color: Blue;
+		width: 50%;
+	}
+
+
+	.column2
+	{
+
+		background-color: Purple;
+		width: 50%;
+	}
+
+
+	.column3
+	{
+		background-color: Gray;
+		width: 50%;
+		display: block;
+	}
+
+
+	.column4
+	{
+		background-color: Brown;
+		width: 50%;
+		display: block;
+	}
+
+
+}
+
+/* At mobile size (remember mobile first)
+- The columns should stack and be full width.
+- Columns 3 and 4 should be hidden
+- Column 1 should be pink
+- Column 2 be red
+
+
+At 641px the page will have
+4 columns, equal width and display side by side.
+Column 1 - blue, Column 2 - purple, Column 3 - grey, Column 4-brown.
+The site should not expand beyond 1140px
+
+*/
